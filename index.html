@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的個人頁面</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0f0f0;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-10px);
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .social-links a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #333;
+      padding: 10px 20px;
+      border-radius: 30px;
+      margin: 5px;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+
+    .social-links a:hover {
+      background-color: #ff6f61;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+        width: 90%;
+      }
+
+      h1 {
+        font-size: 20px;
+      }
+
+      .social-links {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>歡迎來到我的個人頁面！</h1>
+    <div class="social-links">
+      <a href="https://github.com/你的GitHub" target="_blank">GitHub</a>
+      <a href="mailto:你的Email@example.com" target="_blank">Email</a>
+      <a href="https://www.linkedin.com/in/你的LinkedIn" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/你的IG" target="_blank">Instagram</a>
+    </div>
+  </div>
+
+</body>
+</html>
